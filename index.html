@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Social Showcase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: 
+                radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(10, 10, 10, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 0 50px rgba(0, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #00ffff;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #00ffff;
+            margin-bottom: 1rem;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        .social-links {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-icon {
+            font-size: 2.5em;
+            color: #00ffff;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            position: relative;
+            padding: 15px;
+            border-radius: 10px;
+            background: rgba(0, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+        }
+
+        .social-icon:hover {
+            color: #ff00ff;
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+            background: rgba(255, 0, 255, 0.1);
+        }
+
+        .social-icon i {
+            filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.5));
+        }
+
+        .bio {
+            color: #fff;
+            max-width: 500px;
+            margin: 1rem auto;
+            padding: 0 1rem;
+            line-height: 1.6;
+            background: linear-gradient(90deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .profile-img {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @media (max-width: 768px) {
+            .social-links {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="1.png" alt="Profile" class="profile-img">
+        <h1>PRAVEEN HALLUR</h1>
+        <p class="bio">Tech Enthusiast | Developer | Ethical Hacker | Creative Mind | Building Awesome Things for the Future</p>
+        
+        <div class="social-links">
+            <a href="https://github.com/PraveenHallur123" class="social-icon" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/%E0%B2%AA%E0%B3%8D%E0%B2%B0%E0%B2%B5%E0%B3%80%E0%B2%A3-%E0%B2%B9%E0%B2%B3%E0%B3%8D%E0%B2%B3%E0%B3%82%E0%B2%B0-9463ba1bb/" class="social-icon" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/praveenhallur72?t=x1GfFuSg3qwA6TLlnhVJeQ&s=09" class="social-icon" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/mr.praveen_hallur/" class="social-icon" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@edunewskannada" class="social-icon" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/praveen.hallur.143?rdid=76ey4WTLWzA9d0nm&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19sapEapBu%2F" class="social-icon" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://t.me/praveenh22" class="social-icon" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://www.blogger.com/profile/14925355334398541666" class="social-icon" target="_blank">
+                <i class="fab fa-blogger"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
